@@ -1,0 +1,3 @@
+[submodule "HBaseLibrary"]
+	path = HBaseLibrary
+	url = git://github.com/hugowetterberg/HBaseLibrary.git

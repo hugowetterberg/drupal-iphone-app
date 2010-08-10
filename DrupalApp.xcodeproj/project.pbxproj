@@ -13,22 +13,50 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		AF3A9B7912117D2800F30F22 /* AuthorizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B1D12117D2800F30F22 /* AuthorizationManager.m */; };
+		AF3A9B7A12117D2800F30F22 /* HCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B2012117D2800F30F22 /* HCache.m */; };
+		AF3A9B7B12117D2800F30F22 /* HFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B2212117D2800F30F22 /* HFileCache.m */; };
+		AF3A9B7C12117D2800F30F22 /* HMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B2412117D2800F30F22 /* HMemoryCache.m */; };
+		AF3A9B7D12117D2800F30F22 /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B2612117D2800F30F22 /* entities.c */; };
+		AF3A9B7E12117D2800F30F22 /* HFormTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B2C12117D2800F30F22 /* HFormTextField.m */; };
+		AF3A9B7F12117D2800F30F22 /* HFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B2E12117D2800F30F22 /* HFormView.m */; };
+		AF3A9B8012117D2800F30F22 /* AsyncImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B3112117D2800F30F22 /* AsyncImageLoader.m */; };
+		AF3A9B8112117D2800F30F22 /* AsyncImageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B3412117D2800F30F22 /* AsyncImageTableCell.m */; };
+		AF3A9B8212117D2800F30F22 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B3612117D2800F30F22 /* AsyncImageView.m */; };
+		AF3A9B8312117D2800F30F22 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B3A12117D2800F30F22 /* NSObject+SBJSON.m */; };
+		AF3A9B8412117D2800F30F22 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B3C12117D2800F30F22 /* NSString+SBJSON.m */; };
+		AF3A9B8512117D2800F30F22 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B3E12117D2800F30F22 /* SBJSON.m */; };
+		AF3A9B8612117D2800F30F22 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4012117D2800F30F22 /* SBJsonBase.m */; };
+		AF3A9B8712117D2800F30F22 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4212117D2800F30F22 /* SBJsonParser.m */; };
+		AF3A9B8812117D2800F30F22 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4412117D2800F30F22 /* SBJsonWriter.m */; };
+		AF3A9B8912117D2800F30F22 /* NSString+HTMLDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4612117D2800F30F22 /* NSString+HTMLDecode.m */; };
+		AF3A9B8A12117D2800F30F22 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4812117D2800F30F22 /* NSString+MD5.m */; };
+		AF3A9B8B12117D2800F30F22 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4B12117D2800F30F22 /* Base64Transcoder.c */; };
+		AF3A9B8C12117D2800F30F22 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4D12117D2800F30F22 /* hmac.c */; };
+		AF3A9B8D12117D2800F30F22 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B4F12117D2800F30F22 /* sha1.c */; };
+		AF3A9B8E12117D2800F30F22 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B5212117D2800F30F22 /* NSMutableURLRequest+Parameters.m */; };
+		AF3A9B8F12117D2800F30F22 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B5412117D2800F30F22 /* NSString+URLEncoding.m */; };
+		AF3A9B9012117D2800F30F22 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B5612117D2800F30F22 /* NSURL+Base.m */; };
+		AF3A9B9112117D2800F30F22 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B5812117D2800F30F22 /* OAAsynchronousDataFetcher.m */; };
+		AF3A9B9212117D2800F30F22 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B5A12117D2800F30F22 /* OAConsumer.m */; };
+		AF3A9B9312117D2800F30F22 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B5C12117D2800F30F22 /* OADataFetcher.m */; };
+		AF3A9B9412117D2800F30F22 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B5E12117D2800F30F22 /* OAHMAC_SHA1SignatureProvider.m */; };
+		AF3A9B9512117D2800F30F22 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B6012117D2800F30F22 /* OAMutableURLRequest.m */; };
+		AF3A9B9612117D2800F30F22 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B6212117D2800F30F22 /* OAPlaintextSignatureProvider.m */; };
+		AF3A9B9712117D2800F30F22 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B6412117D2800F30F22 /* OARequestParameter.m */; };
+		AF3A9B9812117D2800F30F22 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B6612117D2800F30F22 /* OAServiceTicket.m */; };
+		AF3A9B9912117D2800F30F22 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B6912117D2800F30F22 /* OAToken.m */; };
+		AF3A9B9A12117D2800F30F22 /* NSMutableDictionary+HTTPParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B6D12117D2800F30F22 /* NSMutableDictionary+HTTPParameters.m */; };
+		AF3A9B9B12117D2800F30F22 /* OAuthRESTClientDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B6F12117D2800F30F22 /* OAuthRESTClientDelegate.m */; };
+		AF3A9B9C12117D2800F30F22 /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B7112117D2800F30F22 /* RESTClient.m */; };
+		AF3A9B9D12117D2800F30F22 /* RESTClientAsyncRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B7312117D2800F30F22 /* RESTClientAsyncRequest.m */; };
+		AF3A9B9E12117D2800F30F22 /* RESTClientCachePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B7512117D2800F30F22 /* RESTClientCachePolicy.m */; };
+		AF3A9B9F12117D2800F30F22 /* RESTClientRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3A9B7812117D2800F30F22 /* RESTClientRequest.m */; };
 		AF3F208210499351005A0F28 /* NodeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3F208110499351005A0F28 /* NodeListController.m */; };
-		AFCB110310459B9D00FB74BB /* libHBaseLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCB110210459B8D00FB74BB /* libHBaseLibrary.a */; };
 		AFCB111910459E0D00FB74BB /* AuthorizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCB111810459E0D00FB74BB /* AuthorizationView.xib */; };
 		AFCB11211045B11100FB74BB /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCB11201045B11100FB74BB /* AuthorizationViewController.m */; };
 		AFCB122C1047C86700FB74BB /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = AFCB122B1047C86700FB74BB /* info.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AFCB110110459B8D00FB74BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFCB10FD10459B8D00FB74BB /* HBaseLibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = HBaseLibrary;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,9 +69,96 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* DrupalApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrupalApp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DrupalApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DrupalApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AF3A9B1C12117D2800F30F22 /* AuthorizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationManager.h; sourceTree = "<group>"; };
+		AF3A9B1D12117D2800F30F22 /* AuthorizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationManager.m; sourceTree = "<group>"; };
+		AF3A9B1F12117D2800F30F22 /* HCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCache.h; sourceTree = "<group>"; };
+		AF3A9B2012117D2800F30F22 /* HCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCache.m; sourceTree = "<group>"; };
+		AF3A9B2112117D2800F30F22 /* HFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFileCache.h; sourceTree = "<group>"; };
+		AF3A9B2212117D2800F30F22 /* HFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFileCache.m; sourceTree = "<group>"; };
+		AF3A9B2312117D2800F30F22 /* HMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMemoryCache.h; sourceTree = "<group>"; };
+		AF3A9B2412117D2800F30F22 /* HMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMemoryCache.m; sourceTree = "<group>"; };
+		AF3A9B2512117D2800F30F22 /* HSimpleCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSimpleCache.h; sourceTree = "<group>"; };
+		AF3A9B2612117D2800F30F22 /* entities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entities.c; sourceTree = "<group>"; };
+		AF3A9B2712117D2800F30F22 /* entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entities.h; sourceTree = "<group>"; };
+		AF3A9B2912117D2800F30F22 /* HForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HForm.h; sourceTree = "<group>"; };
+		AF3A9B2A12117D2800F30F22 /* HFormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFormElement.h; sourceTree = "<group>"; };
+		AF3A9B2B12117D2800F30F22 /* HFormTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFormTextField.h; sourceTree = "<group>"; };
+		AF3A9B2C12117D2800F30F22 /* HFormTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFormTextField.m; sourceTree = "<group>"; };
+		AF3A9B2D12117D2800F30F22 /* HFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFormView.h; sourceTree = "<group>"; };
+		AF3A9B2E12117D2800F30F22 /* HFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFormView.m; sourceTree = "<group>"; };
+		AF3A9B3012117D2800F30F22 /* AsyncImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageLoader.h; sourceTree = "<group>"; };
+		AF3A9B3112117D2800F30F22 /* AsyncImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageLoader.m; sourceTree = "<group>"; };
+		AF3A9B3212117D2800F30F22 /* AsyncImageLoaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageLoaderDelegate.h; sourceTree = "<group>"; };
+		AF3A9B3312117D2800F30F22 /* AsyncImageTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageTableCell.h; sourceTree = "<group>"; };
+		AF3A9B3412117D2800F30F22 /* AsyncImageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageTableCell.m; sourceTree = "<group>"; };
+		AF3A9B3512117D2800F30F22 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		AF3A9B3612117D2800F30F22 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		AF3A9B3812117D2800F30F22 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		AF3A9B3912117D2800F30F22 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		AF3A9B3A12117D2800F30F22 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		AF3A9B3B12117D2800F30F22 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		AF3A9B3C12117D2800F30F22 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		AF3A9B3D12117D2800F30F22 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		AF3A9B3E12117D2800F30F22 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		AF3A9B3F12117D2800F30F22 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		AF3A9B4012117D2800F30F22 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		AF3A9B4112117D2800F30F22 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		AF3A9B4212117D2800F30F22 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		AF3A9B4312117D2800F30F22 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		AF3A9B4412117D2800F30F22 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		AF3A9B4512117D2800F30F22 /* NSString+HTMLDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTMLDecode.h"; sourceTree = "<group>"; };
+		AF3A9B4612117D2800F30F22 /* NSString+HTMLDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLDecode.m"; sourceTree = "<group>"; };
+		AF3A9B4712117D2800F30F22 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		AF3A9B4812117D2800F30F22 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		AF3A9B4B12117D2800F30F22 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		AF3A9B4C12117D2800F30F22 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		AF3A9B4D12117D2800F30F22 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		AF3A9B4E12117D2800F30F22 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		AF3A9B4F12117D2800F30F22 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		AF3A9B5012117D2800F30F22 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		AF3A9B5112117D2800F30F22 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		AF3A9B5212117D2800F30F22 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		AF3A9B5312117D2800F30F22 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		AF3A9B5412117D2800F30F22 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		AF3A9B5512117D2800F30F22 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		AF3A9B5612117D2800F30F22 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
+		AF3A9B5712117D2800F30F22 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAsynchronousDataFetcher.h; sourceTree = "<group>"; };
+		AF3A9B5812117D2800F30F22 /* OAAsynchronousDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAsynchronousDataFetcher.m; sourceTree = "<group>"; };
+		AF3A9B5912117D2800F30F22 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		AF3A9B5A12117D2800F30F22 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		AF3A9B5B12117D2800F30F22 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		AF3A9B5C12117D2800F30F22 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
+		AF3A9B5D12117D2800F30F22 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		AF3A9B5E12117D2800F30F22 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		AF3A9B5F12117D2800F30F22 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		AF3A9B6012117D2800F30F22 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		AF3A9B6112117D2800F30F22 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		AF3A9B6212117D2800F30F22 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		AF3A9B6312117D2800F30F22 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		AF3A9B6412117D2800F30F22 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		AF3A9B6512117D2800F30F22 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		AF3A9B6612117D2800F30F22 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		AF3A9B6712117D2800F30F22 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		AF3A9B6812117D2800F30F22 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		AF3A9B6912117D2800F30F22 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		AF3A9B6A12117D2800F30F22 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		AF3A9B6C12117D2800F30F22 /* NSMutableDictionary+HTTPParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+HTTPParameters.h"; sourceTree = "<group>"; };
+		AF3A9B6D12117D2800F30F22 /* NSMutableDictionary+HTTPParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+HTTPParameters.m"; sourceTree = "<group>"; };
+		AF3A9B6E12117D2800F30F22 /* OAuthRESTClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthRESTClientDelegate.h; sourceTree = "<group>"; };
+		AF3A9B6F12117D2800F30F22 /* OAuthRESTClientDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthRESTClientDelegate.m; sourceTree = "<group>"; };
+		AF3A9B7012117D2800F30F22 /* RESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClient.h; sourceTree = "<group>"; };
+		AF3A9B7112117D2800F30F22 /* RESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClient.m; sourceTree = "<group>"; };
+		AF3A9B7212117D2800F30F22 /* RESTClientAsyncRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClientAsyncRequest.h; sourceTree = "<group>"; };
+		AF3A9B7312117D2800F30F22 /* RESTClientAsyncRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClientAsyncRequest.m; sourceTree = "<group>"; };
+		AF3A9B7412117D2800F30F22 /* RESTClientCachePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClientCachePolicy.h; sourceTree = "<group>"; };
+		AF3A9B7512117D2800F30F22 /* RESTClientCachePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClientCachePolicy.m; sourceTree = "<group>"; };
+		AF3A9B7612117D2800F30F22 /* RESTClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClientDelegate.h; sourceTree = "<group>"; };
+		AF3A9B7712117D2800F30F22 /* RESTClientRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClientRequest.h; sourceTree = "<group>"; };
+		AF3A9B7812117D2800F30F22 /* RESTClientRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClientRequest.m; sourceTree = "<group>"; };
+		AF3A9BF81211E89200F30F22 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AF3A9BF91211E8AD00F30F22 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AF3F208010499351005A0F28 /* NodeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeListController.h; sourceTree = "<group>"; };
 		AF3F208110499351005A0F28 /* NodeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeListController.m; sourceTree = "<group>"; };
-		AFCB10FD10459B8D00FB74BB /* HBaseLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HBaseLibrary.xcodeproj; path = ../Libraries/HBaseLibrary/HBaseLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AFCB111810459E0D00FB74BB /* AuthorizationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationView.xib; sourceTree = "<group>"; };
 		AFCB111F1045B11100FB74BB /* AuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
 		AFCB11201045B11100FB74BB /* AuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
@@ -55,7 +170,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCB110310459B9D00FB74BB /* libHBaseLibrary.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -89,12 +203,13 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				AFCB10FD10459B8D00FB74BB /* HBaseLibrary.xcodeproj */,
+				AF3A9B1B12117D2800F30F22 /* HBaseLibrary */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				AF3A9BF81211E89200F30F22 /* LICENSE */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -129,12 +244,155 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AFCB10FE10459B8D00FB74BB /* Products */ = {
+		AF3A9B1B12117D2800F30F22 /* HBaseLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				AFCB110210459B8D00FB74BB /* libHBaseLibrary.a */,
+				AF3A9B1C12117D2800F30F22 /* AuthorizationManager.h */,
+				AF3A9B1D12117D2800F30F22 /* AuthorizationManager.m */,
+				AF3A9B1E12117D2800F30F22 /* Caching */,
+				AF3A9B2612117D2800F30F22 /* entities.c */,
+				AF3A9B2712117D2800F30F22 /* entities.h */,
+				AF3A9B2812117D2800F30F22 /* Form */,
+				AF3A9B2F12117D2800F30F22 /* ImageLoading */,
+				AF3A9B3712117D2800F30F22 /* JSON */,
+				AF3A9B4512117D2800F30F22 /* NSString+HTMLDecode.h */,
+				AF3A9B4612117D2800F30F22 /* NSString+HTMLDecode.m */,
+				AF3A9B4712117D2800F30F22 /* NSString+MD5.h */,
+				AF3A9B4812117D2800F30F22 /* NSString+MD5.m */,
+				AF3A9B4912117D2800F30F22 /* OAuth */,
+				AF3A9B6B12117D2800F30F22 /* REST */,
+				AF3A9BF91211E8AD00F30F22 /* LICENSE */,
 			);
-			name = Products;
+			name = HBaseLibrary;
+			path = HBaseLibrary/src;
+			sourceTree = "<group>";
+		};
+		AF3A9B1E12117D2800F30F22 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				AF3A9B1F12117D2800F30F22 /* HCache.h */,
+				AF3A9B2012117D2800F30F22 /* HCache.m */,
+				AF3A9B2112117D2800F30F22 /* HFileCache.h */,
+				AF3A9B2212117D2800F30F22 /* HFileCache.m */,
+				AF3A9B2312117D2800F30F22 /* HMemoryCache.h */,
+				AF3A9B2412117D2800F30F22 /* HMemoryCache.m */,
+				AF3A9B2512117D2800F30F22 /* HSimpleCache.h */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		AF3A9B2812117D2800F30F22 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				AF3A9B2912117D2800F30F22 /* HForm.h */,
+				AF3A9B2A12117D2800F30F22 /* HFormElement.h */,
+				AF3A9B2B12117D2800F30F22 /* HFormTextField.h */,
+				AF3A9B2C12117D2800F30F22 /* HFormTextField.m */,
+				AF3A9B2D12117D2800F30F22 /* HFormView.h */,
+				AF3A9B2E12117D2800F30F22 /* HFormView.m */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		AF3A9B2F12117D2800F30F22 /* ImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				AF3A9B3012117D2800F30F22 /* AsyncImageLoader.h */,
+				AF3A9B3112117D2800F30F22 /* AsyncImageLoader.m */,
+				AF3A9B3212117D2800F30F22 /* AsyncImageLoaderDelegate.h */,
+				AF3A9B3312117D2800F30F22 /* AsyncImageTableCell.h */,
+				AF3A9B3412117D2800F30F22 /* AsyncImageTableCell.m */,
+				AF3A9B3512117D2800F30F22 /* AsyncImageView.h */,
+				AF3A9B3612117D2800F30F22 /* AsyncImageView.m */,
+			);
+			path = ImageLoading;
+			sourceTree = "<group>";
+		};
+		AF3A9B3712117D2800F30F22 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				AF3A9B3812117D2800F30F22 /* JSON.h */,
+				AF3A9B3912117D2800F30F22 /* NSObject+SBJSON.h */,
+				AF3A9B3A12117D2800F30F22 /* NSObject+SBJSON.m */,
+				AF3A9B3B12117D2800F30F22 /* NSString+SBJSON.h */,
+				AF3A9B3C12117D2800F30F22 /* NSString+SBJSON.m */,
+				AF3A9B3D12117D2800F30F22 /* SBJSON.h */,
+				AF3A9B3E12117D2800F30F22 /* SBJSON.m */,
+				AF3A9B3F12117D2800F30F22 /* SBJsonBase.h */,
+				AF3A9B4012117D2800F30F22 /* SBJsonBase.m */,
+				AF3A9B4112117D2800F30F22 /* SBJsonParser.h */,
+				AF3A9B4212117D2800F30F22 /* SBJsonParser.m */,
+				AF3A9B4312117D2800F30F22 /* SBJsonWriter.h */,
+				AF3A9B4412117D2800F30F22 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		AF3A9B4912117D2800F30F22 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AF3A9B4A12117D2800F30F22 /* Crypto */,
+				AF3A9B5112117D2800F30F22 /* NSMutableURLRequest+Parameters.h */,
+				AF3A9B5212117D2800F30F22 /* NSMutableURLRequest+Parameters.m */,
+				AF3A9B5312117D2800F30F22 /* NSString+URLEncoding.h */,
+				AF3A9B5412117D2800F30F22 /* NSString+URLEncoding.m */,
+				AF3A9B5512117D2800F30F22 /* NSURL+Base.h */,
+				AF3A9B5612117D2800F30F22 /* NSURL+Base.m */,
+				AF3A9B5712117D2800F30F22 /* OAAsynchronousDataFetcher.h */,
+				AF3A9B5812117D2800F30F22 /* OAAsynchronousDataFetcher.m */,
+				AF3A9B5912117D2800F30F22 /* OAConsumer.h */,
+				AF3A9B5A12117D2800F30F22 /* OAConsumer.m */,
+				AF3A9B5B12117D2800F30F22 /* OADataFetcher.h */,
+				AF3A9B5C12117D2800F30F22 /* OADataFetcher.m */,
+				AF3A9B5D12117D2800F30F22 /* OAHMAC_SHA1SignatureProvider.h */,
+				AF3A9B5E12117D2800F30F22 /* OAHMAC_SHA1SignatureProvider.m */,
+				AF3A9B5F12117D2800F30F22 /* OAMutableURLRequest.h */,
+				AF3A9B6012117D2800F30F22 /* OAMutableURLRequest.m */,
+				AF3A9B6112117D2800F30F22 /* OAPlaintextSignatureProvider.h */,
+				AF3A9B6212117D2800F30F22 /* OAPlaintextSignatureProvider.m */,
+				AF3A9B6312117D2800F30F22 /* OARequestParameter.h */,
+				AF3A9B6412117D2800F30F22 /* OARequestParameter.m */,
+				AF3A9B6512117D2800F30F22 /* OAServiceTicket.h */,
+				AF3A9B6612117D2800F30F22 /* OAServiceTicket.m */,
+				AF3A9B6712117D2800F30F22 /* OASignatureProviding.h */,
+				AF3A9B6812117D2800F30F22 /* OAToken.h */,
+				AF3A9B6912117D2800F30F22 /* OAToken.m */,
+				AF3A9B6A12117D2800F30F22 /* OAuthConsumer.h */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		AF3A9B4A12117D2800F30F22 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				AF3A9B4B12117D2800F30F22 /* Base64Transcoder.c */,
+				AF3A9B4C12117D2800F30F22 /* Base64Transcoder.h */,
+				AF3A9B4D12117D2800F30F22 /* hmac.c */,
+				AF3A9B4E12117D2800F30F22 /* hmac.h */,
+				AF3A9B4F12117D2800F30F22 /* sha1.c */,
+				AF3A9B5012117D2800F30F22 /* sha1.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		AF3A9B6B12117D2800F30F22 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				AF3A9B6C12117D2800F30F22 /* NSMutableDictionary+HTTPParameters.h */,
+				AF3A9B6D12117D2800F30F22 /* NSMutableDictionary+HTTPParameters.m */,
+				AF3A9B6E12117D2800F30F22 /* OAuthRESTClientDelegate.h */,
+				AF3A9B6F12117D2800F30F22 /* OAuthRESTClientDelegate.m */,
+				AF3A9B7012117D2800F30F22 /* RESTClient.h */,
+				AF3A9B7112117D2800F30F22 /* RESTClient.m */,
+				AF3A9B7212117D2800F30F22 /* RESTClientAsyncRequest.h */,
+				AF3A9B7312117D2800F30F22 /* RESTClientAsyncRequest.m */,
+				AF3A9B7412117D2800F30F22 /* RESTClientCachePolicy.h */,
+				AF3A9B7512117D2800F30F22 /* RESTClientCachePolicy.m */,
+				AF3A9B7612117D2800F30F22 /* RESTClientDelegate.h */,
+				AF3A9B7712117D2800F30F22 /* RESTClientRequest.h */,
+				AF3A9B7812117D2800F30F22 /* RESTClientRequest.m */,
+			);
+			path = REST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,28 +425,12 @@
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AFCB10FE10459B8D00FB74BB /* Products */;
-					ProjectRef = AFCB10FD10459B8D00FB74BB /* HBaseLibrary.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* DrupalApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AFCB110210459B8D00FB74BB /* libHBaseLibrary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libHBaseLibrary.a;
-			remoteRef = AFCB110110459B8D00FB74BB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -212,6 +454,45 @@
 				1D3623260D0F684500981E51 /* DrupalAppAppDelegate.m in Sources */,
 				AFCB11211045B11100FB74BB /* AuthorizationViewController.m in Sources */,
 				AF3F208210499351005A0F28 /* NodeListController.m in Sources */,
+				AF3A9B7912117D2800F30F22 /* AuthorizationManager.m in Sources */,
+				AF3A9B7A12117D2800F30F22 /* HCache.m in Sources */,
+				AF3A9B7B12117D2800F30F22 /* HFileCache.m in Sources */,
+				AF3A9B7C12117D2800F30F22 /* HMemoryCache.m in Sources */,
+				AF3A9B7D12117D2800F30F22 /* entities.c in Sources */,
+				AF3A9B7E12117D2800F30F22 /* HFormTextField.m in Sources */,
+				AF3A9B7F12117D2800F30F22 /* HFormView.m in Sources */,
+				AF3A9B8012117D2800F30F22 /* AsyncImageLoader.m in Sources */,
+				AF3A9B8112117D2800F30F22 /* AsyncImageTableCell.m in Sources */,
+				AF3A9B8212117D2800F30F22 /* AsyncImageView.m in Sources */,
+				AF3A9B8312117D2800F30F22 /* NSObject+SBJSON.m in Sources */,
+				AF3A9B8412117D2800F30F22 /* NSString+SBJSON.m in Sources */,
+				AF3A9B8512117D2800F30F22 /* SBJSON.m in Sources */,
+				AF3A9B8612117D2800F30F22 /* SBJsonBase.m in Sources */,
+				AF3A9B8712117D2800F30F22 /* SBJsonParser.m in Sources */,
+				AF3A9B8812117D2800F30F22 /* SBJsonWriter.m in Sources */,
+				AF3A9B8912117D2800F30F22 /* NSString+HTMLDecode.m in Sources */,
+				AF3A9B8A12117D2800F30F22 /* NSString+MD5.m in Sources */,
+				AF3A9B8B12117D2800F30F22 /* Base64Transcoder.c in Sources */,
+				AF3A9B8C12117D2800F30F22 /* hmac.c in Sources */,
+				AF3A9B8D12117D2800F30F22 /* sha1.c in Sources */,
+				AF3A9B8E12117D2800F30F22 /* NSMutableURLRequest+Parameters.m in Sources */,
+				AF3A9B8F12117D2800F30F22 /* NSString+URLEncoding.m in Sources */,
+				AF3A9B9012117D2800F30F22 /* NSURL+Base.m in Sources */,
+				AF3A9B9112117D2800F30F22 /* OAAsynchronousDataFetcher.m in Sources */,
+				AF3A9B9212117D2800F30F22 /* OAConsumer.m in Sources */,
+				AF3A9B9312117D2800F30F22 /* OADataFetcher.m in Sources */,
+				AF3A9B9412117D2800F30F22 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				AF3A9B9512117D2800F30F22 /* OAMutableURLRequest.m in Sources */,
+				AF3A9B9612117D2800F30F22 /* OAPlaintextSignatureProvider.m in Sources */,
+				AF3A9B9712117D2800F30F22 /* OARequestParameter.m in Sources */,
+				AF3A9B9812117D2800F30F22 /* OAServiceTicket.m in Sources */,
+				AF3A9B9912117D2800F30F22 /* OAToken.m in Sources */,
+				AF3A9B9A12117D2800F30F22 /* NSMutableDictionary+HTTPParameters.m in Sources */,
+				AF3A9B9B12117D2800F30F22 /* OAuthRESTClientDelegate.m in Sources */,
+				AF3A9B9C12117D2800F30F22 /* RESTClient.m in Sources */,
+				AF3A9B9D12117D2800F30F22 /* RESTClientAsyncRequest.m in Sources */,
+				AF3A9B9E12117D2800F30F22 /* RESTClientCachePolicy.m in Sources */,
+				AF3A9B9F12117D2800F30F22 /* RESTClientRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +535,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
-				USER_HEADER_SEARCH_PATHS = "$(InternalLibraries)/**";
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
