@@ -3,37 +3,44 @@
 //  DrupalApp
 //
 //  Created by Hugo Wetterberg on 2009-08-29.
-//  Copyright 2009 Good Old. All rights reserved.
+//  Copyright 2010 Hugo Wetterberg. All rights reserved.
 //
 
 #import "NodeListController.h"
 
 @implementation NodeListController
 
-- (id)initWithStyle:(UITableViewStyle)style restClient:(RESTClient *)aClient {
-    if (self = [super initWithStyle:style]) {
-        client = [aClient retain];
-        
-        // Set some info for the tab bar, we'll use one of the built in items this time
-        self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostRecent tag:0];
-        
-        // The only parameters we need is some sorting stuff,
-        // probably redundant, but it showcases parameter sending
-        NSMutableDictionary *params = [[[NSMutableDictionary alloc] init] autorelease];
-        [params setObject:@"created" forKey:@"sort_field"];
-        [params setObject:@"DESC" forKey:@"sort_order"];
-        
-        // Tell the rest client to load the node index
-        // We provide two selectors for callbacks, one
-        // for success and one for failure
-        [client getResourceAsync:[NSURL URLWithString:@"http://drupaliphone.local/services/rest/node.json"] 
-                          method:@"GET" 
-                      parameters:params 
-                          target:self 
-                        selector:@selector(restRequest:nodesLoaded:) 
-                    failSelector:@selector(restRequest:nodesFailedToLoad:)];
+- (id)initWithStyle:(UITableViewStyle)style{
+    if ((self = [super initWithStyle:style])) {
+        [self loadNodes];
     }
     return self;
+}
+
+- (void)loadNodes {
+	RESTClient *client = [RESTClient sharedClient]; 
+	
+	// Set some info for the tab bar, we'll use one of the built in items this time
+	self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostRecent tag:0];
+	
+	RESTClientRequest *request = [[RESTClientRequest alloc] initWithUrl:[NSURL URLWithString:@"http://iphone.local/api/iphone/node"]
+																 method:@"GET"];
+	
+	// Add a accept header to tell Drupal that we want our result as JSON
+	[request.headers setObject:@"application/json" forKey:@"Accept"];
+	
+	// The only parameters we need is some sorting stuff,
+	// probably redundant, but it showcases parameter sending
+	[request.parameters setObject:@"created" forKey:@"sort_field"];
+	[request.parameters setObject:@"DESC" forKey:@"sort_order"];
+	
+	
+	// Tell the rest client to load the node index
+	// We provide two selectors for callbacks, one
+	// for success and one for failure
+	[client performRequestAsync:request target:self 
+					   selector:@selector(restRequest:nodesLoaded:)
+				   failSelector:@selector(restRequest:nodesFailedToLoad:)];
 }
 
 - (void)restRequest:(id)request nodesLoaded:(NSArray *)loadedNodes {
@@ -62,11 +69,13 @@
 }
 */
 
-/*
 - (void)viewWillAppear:(BOOL)animated {
+	if (!nodes) {
+		[self loadNodes];
+	}
     [super viewWillAppear:animated];
 }
-*/
+
 /*
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

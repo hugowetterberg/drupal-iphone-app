@@ -3,7 +3,7 @@
 //  DrupalApp
 //
 //  Created by Hugo Wetterberg on 2009-08-26.
-//  Copyright 2009 Good Old. All rights reserved.
+//  Copyright 2010 Hugo Wetterberg. All rights reserved.
 //
 
 #import "OAuthViewController.h"

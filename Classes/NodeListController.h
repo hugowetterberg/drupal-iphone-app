@@ -3,17 +3,17 @@
 //  DrupalApp
 //
 //  Created by Hugo Wetterberg on 2009-08-29.
-//  Copyright 2009 Good Old. All rights reserved.
+//  Copyright 2010 Hugo Wetterberg. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "RESTClient.h"
 
 @interface NodeListController : UITableViewController {
-    RESTClient *client;
     NSArray *nodes;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style restClient:(RESTClient *)aClient;
+- (id)initWithStyle:(UITableViewStyle)style;
+- (void)loadNodes;
 
 @end

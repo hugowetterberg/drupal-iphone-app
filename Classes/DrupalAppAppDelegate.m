@@ -21,8 +21,8 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
     // Create a shared authorization manager
-    NSURL *baseUrl = [NSURL URLWithString:@"http://drupaliphone.local"];
-    OAConsumer *consumer = [[OAConsumer alloc] initWithKey:@"92dyZAANYnepnjG69suXV775rKDgnhzi" secret:@"ffRTh8pP9gfWSFpu3NJt6j5v6j4ENZSf"];
+    NSURL *baseUrl = [NSURL URLWithString:@"http://iphone.local"];
+    OAConsumer *consumer = [[OAConsumer alloc] initWithKey:@"rmTU6Sxs7TGwvJGqNHBy9E9NqDXegQXr" secret:@"qH5uWLPkEtZ5DsVQoaAT8VBUZT7KXYBP"];
     AuthorizationManager *manager = [[[AuthorizationManager alloc] initWithConsumer:consumer baseUrl:baseUrl] autorelease];
     [AuthorizationManager setSharedManager:manager];
     
@@ -30,12 +30,13 @@
     RESTClient *client = [[[RESTClient alloc] init] autorelease];
     OAuthRESTClientDelegate *oauthDelegate = [[OAuthRESTClientDelegate alloc] initWithAuthorizationManager:manager];
     client.delegate = [oauthDelegate autorelease];
+	[RESTClient setSharedClient:client];
     
     // Create a instance of our controller, specifying the name of our xib
     AuthorizationViewController *auth = [[[AuthorizationViewController alloc] initWithNibName:@"AuthorizationView" bundle:nil] autorelease];
     
     // Create a instance of our node list controller
-    NodeListController *nodeList = [[[NodeListController alloc] initWithStyle:UITableViewStylePlain restClient:client] autorelease];
+    NodeListController *nodeList = [[[NodeListController alloc] initWithStyle:UITableViewStylePlain] autorelease];
     
     // Create an array of controllers
     NSArray *controllers = [[[NSArray alloc] initWithObjects:nodeList, auth, nil] autorelease];
