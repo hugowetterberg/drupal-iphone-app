@@ -156,7 +156,6 @@
 		AF3A9B7712117D2800F30F22 /* RESTClientRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClientRequest.h; sourceTree = "<group>"; };
 		AF3A9B7812117D2800F30F22 /* RESTClientRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClientRequest.m; sourceTree = "<group>"; };
 		AF3A9BF81211E89200F30F22 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		AF3A9BF91211E8AD00F30F22 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AF3F208010499351005A0F28 /* NodeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeListController.h; sourceTree = "<group>"; };
 		AF3F208110499351005A0F28 /* NodeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeListController.m; sourceTree = "<group>"; };
 		AFCB111810459E0D00FB74BB /* AuthorizationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationView.xib; sourceTree = "<group>"; };
@@ -261,7 +260,6 @@
 				AF3A9B4812117D2800F30F22 /* NSString+MD5.m */,
 				AF3A9B4912117D2800F30F22 /* OAuth */,
 				AF3A9B6B12117D2800F30F22 /* REST */,
-				AF3A9BF91211E8AD00F30F22 /* LICENSE */,
 			);
 			name = HBaseLibrary;
 			path = HBaseLibrary/src;
